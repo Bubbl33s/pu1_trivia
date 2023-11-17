@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    background-color: #FFE5D9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0 0 0);
+}
+
+header {
+    background-color: #F4ACB7;
+    text-align: center;
+    height: 15vh;
+    max-height: 100px;
+    padding: 10px 0;
+    overflow: auto;
+}
+
+header p {
+    margin-top: -5px;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    background-color: #FFCAD4;
+    margin: 20px auto;
+    padding: 15px 0 30px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 800px;
+    min-width: 600px;
+}
+
+.container h2 {
+    margin-bottom: 15px;
+}
+
+.cat-container {
+    display: flex;
+    justify-content: center;
+}
+
+.cat {
+    font-weight: 700;
+    padding: 10px 20px;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.cat p {
+    font-size: 20px;
+}
+
+.cat:hover {
+    transform: scale(1.2);
+    filter: blur(0);
+}
+
+.cat-container:hover .cat:not(:hover) {
+    filter: blur(2px);
+}
+
+.logo {
+    height: 85%;
+}
+
+footer {
+    background-color: #F4ACB7;
+    height: 10vh;
+    display: flex;
+}
+
+.git-link {
+    margin: auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.git-link p {
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.git-link:hover {
+    background-color: #333;
+    color: rgb(255 255 255);
+}
+
+.git-link svg {
+    transition: 1s;
+}
+
+.git-link:hover svg {
+    filter: invert(1);
+}
