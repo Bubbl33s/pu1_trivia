@@ -30,24 +30,30 @@ header {
 
 header p {
     margin-top: -5px;
+    font-size: 120%;
 }
 
 main {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     background-color: #FFCAD4;
-    margin: 20px auto;
-    padding: 15px 0 30px;
+    padding: 40px 50px;
     text-align: center;
     border-radius: 10px;
     max-width: 800px;
     min-width: 600px;
+    height: 30vh;
+    min-height: 400px;
 }
 
 .container h2 {
-    margin-bottom: 15px;
+    font-size: 200%;
+    margin-bottom: 30px;
 }
 
 .cat-container {
@@ -72,11 +78,66 @@ main {
 }
 
 .cat-container:hover .cat:not(:hover) {
-    filter: blur(2px);
+    filter: blur(3px);
 }
 
 .logo {
     height: 85%;
+}
+
+#popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    min-height: 430px;
+    width: 60vw;
+    max-width: 800px;
+    min-width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    padding: 30px 40px 60px;
+    background-color: #D8E2DC;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#popup-title {
+    text-align: center;
+    font-size: 250%;
+    margin-bottom: 20px;
+}
+
+#popup-info {
+    font-size: 120%;
+    display: flex;
+}
+
+#popup-info p {
+    width: 80%;
+    padding-right: 30px;
+}
+
+#popup-logo {
+    width: 200px;
+}
+
+#popup-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+    font-size: 120%;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    background-color: #696969;
+    border-radius: 5px;
 }
 
 footer {
