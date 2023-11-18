@@ -36,26 +36,20 @@ const popup_elements = [
         `
     }];
 
-cats.forEach(cat => {
+cats.forEach((cat, index) => {
     cat.addEventListener('click', function () {
         popup.style.display = 'flex';
 
-        switch (cat.id) {
-            case 'cat-html':
-                popup_title.innerText = popup_elements[0].title;
-                popup_info.innerText = popup_elements[0].p;
-                popup_logo.innerHTML = popup_elements[0].svg;
-                break;
-            case 'cat-css':
-                popup_title.innerText = popup_elements[1].title;
-                popup_info.innerText = popup_elements[1].p;
-                popup_logo.innerHTML = popup_elements[1].svg;
-                break;
-            case 'cat-js':
-                popup_title.innerText = popup_elements[2].title;
-                popup_info.innerText = popup_elements[2].p;
-                popup_logo.innerHTML = popup_elements[2].svg;
-                break;
+        const catIndex = popup_elements.findIndex(element => element.id === cat.id);
+
+        if (catIndex !== -1) {
+            popup_title.innerText = popup_elements[catIndex].title;
+            popup_info.innerText = popup_elements[catIndex].p;
+
+            // Crear un nuevo elemento SVG y adjuntar el fragmento SVG
+            const svgElement = new DOMParser().parseFromString(popup_elements[catIndex].svg, 'image/svg+xml').documentElement;
+            popup_logo.innerHTML = '';
+            popup_logo.appendChild(svgElement);
         }
     });
 });
