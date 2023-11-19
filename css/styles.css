@@ -112,17 +112,17 @@ main {
     margin-bottom: 20px;
 }
 
-#popup-info {
+#logo-container {
     font-size: 120%;
     display: flex;
 }
 
-#popup-info p {
+#popup-info {
     width: 80%;
     padding-right: 30px;
 }
 
-#popup-logo {
+#logo-container .logo {
     width: 200px;
 }
 
