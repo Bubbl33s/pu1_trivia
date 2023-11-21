@@ -35,8 +35,13 @@ cats.forEach((cat, index) => {
             popup_info.innerText = popup_elements[catIndex].p;
 
             // Crear un nuevo elemento SVG y adjuntar el fragmento SVG
+            // TODO: copy svg node isntead of replace
             const svgElement = document.getElementById(popup_elements[catIndex].logo_id);
             logo_container.appendChild(svgElement);
         }
     });
 });
+
+function hidePopup() {
+    popup.style.display = "none";
+}
