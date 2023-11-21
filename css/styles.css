@@ -19,16 +19,16 @@ a{
     color: rgb(0 0 0);
 }
 
-header {
+.page-header {
     background-color: #F4ACB7;
     text-align: center;
     height: 15vh;
     max-height: 100px;
     padding: 10px 0;
-    overflow: auto;
+    overflow: hidden;
 }
 
-header p {
+.page-header p {
     margin-top: -5px;
     font-size: 120%;
 }
@@ -104,6 +104,13 @@ main {
     background-color: #D8E2DC;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#x-button {
+    border: 1px solid #000;
+    background-color: transparent;
+    align-self: self-end;
+    width: 40px;
 }
 
 #popup-title {

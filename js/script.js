@@ -8,19 +8,19 @@ const popup_elements = [
     {
         id: "cat-html",
         title: "HTML",
-        p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo eius corporis, voluptatem eaque, quas minima repudiandae laborum cum dolorem doloremque ab modi vel fuga consectetur, sint cumque dicta magni vitae.",
+        p: "Hyper Text Markup Language\nForma parte del lenguaje utilizado para la elaboración de sitios web y hace referencia a los enlaces que conectan páginas web entre sí, dentro de un único sitio o varios.",
         logo_id: 'logo-html'
     },
     {
         id: "cat-css",
         title: "CSS",
-        p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo eius corporis, voluptatem eaque, quas minima repudiandae laborum cum dolorem doloremque ab modi vel fuga consectetur, sint cumque dicta magni vitae.",
+        p: "Cascading Style Sheets\nse puede usar para estilos de texto muy básicos como, por ejemplo, cambiar el color y el tamaño de los encabezados y los enlaces, también puede utilizar para crear un diseño.",
         logo_id: 'logo-css'
     },
     {
         id: "cat-js",
         title: "JavaScript",
-        p: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo eius corporis, voluptatem eaque, quas minima repudiandae laborum cum dolorem doloremque ab modi vel fuga consectetur, sint cumque dicta magni vitae.",
+        p: "Es el lenguaje de programación que debes usar para añadir características interactivas a tu sitio web, (por ejemplo, juegos, eventos que ocurren cuando los botones son presionados o los datos son introducidos en los formularios, efectos de estilo dinámicos, animación, y mucho más)",
         logo_id: 'logo-js'
     }];
 
