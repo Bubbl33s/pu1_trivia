@@ -32,6 +32,7 @@ cats.forEach((cat, index) => {
 
         if (catIndex !== -1) {
             popup_title.innerText = popup_elements[catIndex].title;
+            localStorage.setItem("catName", popup_title.innerText);
             popup_info.innerText = popup_elements[catIndex].p;
 
             const svgElement = document.getElementById(popup_elements[catIndex].logo_id).cloneNode(true);
